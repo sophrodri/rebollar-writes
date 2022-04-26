@@ -19,3 +19,12 @@ $asset_url: '{{ '/assets' | absolute_url }}';
   "footnotes",
   "search"
 ;
+
+
+.site-navigation ul{
+  justify-items: right;
+}
+
+.site-navigation a{
+color: white;
+}
