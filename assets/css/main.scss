@@ -22,6 +22,7 @@ $asset_url: '{{ '/assets' | absolute_url }}';
 
 body{
 background: white;
+font-family: 'Source Code Pro', monospace;
 }
 
 .site-navigation ul{
@@ -30,4 +31,8 @@ background: white;
 
 .site-navigation a{
 color: white;
+}
+
+.site-masthead h1{ 
+font-family: 'Pinyon Script', cursive;
 }
