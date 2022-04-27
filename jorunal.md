@@ -1,9 +1,9 @@
 ---
-layout: default 
+layout: post 
 title: Journal 
 ___
 
-{% include nav.html %}
+{% include menu.html %}
 
     
        <!-- Create a loop -->
