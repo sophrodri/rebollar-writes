@@ -7,7 +7,7 @@ ___
 
     
        <!-- Create a loop -->
-    {% for block in site.data.news.story %}
+    {% for block in site.data.journal.story %}
     <div class="cards">
 <div class="card">
     <div class="pic">
