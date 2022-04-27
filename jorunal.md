@@ -1,8 +1,12 @@
 ---
 layout: post 
-title: Journal 
+title: Sophie's Journal 
+description: A log of Sophie's poems and short stories 
+order: 3
 ___
 
+{{site.title}}
+{{site.description}}
 {% include menu.html %}
 
     

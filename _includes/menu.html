@@ -3,8 +3,17 @@
 
 
 {% assign menu = site.data.menu %}
+<ul>
+  {% assign sorted_pages = site.html_pages | sort:"order" %}
+    <!-- Go to Jekyll Site to view complete list of variables -->
+  <!-- Liquid Filters: sort: order filter -->
+  {% for page in sorted_pages %} 
+  <!-- for each html page in this array -->
+  <li class="btn"><a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></li>
+  {% endfor %}
+</ul>
 
-{% if menu %}
+<!-- {% if menu %}
   <nav class="site-navigation" role="navigation">
     <ul>
       <li>
@@ -27,4 +36,4 @@
     {% endfor %}
     </ul>
   </nav>
-{% endif %}
+{% endif %} -->
