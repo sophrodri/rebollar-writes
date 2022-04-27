@@ -24,12 +24,12 @@ background: white;
 font-family: 'Source Code Pro', monospace;
 }
 
+// site nav css 
 .site-navigation{
 padding: 30px;
 background: black;
 margin: 0;
 }
-
 
 .site-navigation ul{
 justify-content: left;
@@ -48,4 +48,17 @@ font-family: 'Pinyon Script', cursive;
 background: pink;
 justify-content: right;
 padding-bottom: 2rem;
+}
+
+
+
+// journal stories
+.card{
+display: flex;
+margin-bottom: 1rem;
+border-bottom: solid 1px lightcoral;
+}
+
+.pic{
+   margin-right: 1.5rem;
 }
