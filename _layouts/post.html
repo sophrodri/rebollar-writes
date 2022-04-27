@@ -8,7 +8,27 @@ layout: default
   {% include back-link.html %}
 {% endif %}
 
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting" id="main" role="article" aria-label="Content">
+
+    
+       <!-- Create a loop -->
+    {% for block in site.data.journal.story %}
+    <div class="cards">
+<div class="card">
+    <div class="pic">
+        <img src="{{block.image}}" alt="{{block.image-alt}}">
+    </div>
+        <div class="content">
+            <h3 class="title">{{block.title}}</h3>
+           <h4>{{block.subtitle}}</h4>
+           <p>{{block.story-content}}</p>
+           <p><a href="{{block.tag-link}}">{{block.tag}}</a></p>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+<!-- <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting" id="main" role="article" aria-label="Content">
 
   {% if page.title != "" %}
     <h1 class="post-title divided p-name" itemprop="name headline">
@@ -31,4 +51,4 @@ layout: default
     {% include disqus-comments.html %}
   {% endif %}
 
-</article>
+</article> -->
